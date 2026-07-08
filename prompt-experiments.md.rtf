@@ -1,0 +1,29 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww34360\viewh21680\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 PROMPT 1: Role Prompting\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 "What are the risks of a portfolio concentrated in one sector?"\
+\
+"You are a senior portfolio manager at a top-10 asset management firm. A client has 80% of their portfolio in technology stocks. What specific risks would you flag, and what would you recommend?"\
+\
+NOTED: Claude comes across very professional and gets right to the information,\
+\
+PROMPT 2: Few-Shot Prompting\
+"Here are two examples of how I want you to analyze a stock: AAPL: Strong brand moat, high gross margins (~45%), but richly valued at 28\'d7 earnings. Key risk: concentration in iPhone revenue (~50% of sales). Rating: Hold. JPM: Dominant franchise in investment banking and consumer banking. Benefits from rising rates. Regulatory risk always present. Rating: Buy. Now analyze MSFT in the same format."\
+\
+NOTED: The model improves a little bit after each example and I think that this is because it gets more practice and training.\
+\
+PROMPT 3: Chain of Thought\
+\
+"A portfolio has $10,000 in AAPL (cost $8,000), $5,000 in MSFT (cost $6,000), and $3,000 in JPM (cost $2,500). What is the overall portfolio return?"\
+\
+"Think step by step. A portfolio has $10,000 in AAPL (cost $8,000), $5,000 in MSFT (cost $6,000), and $3,000 in JPM (cost $2,500). What is the overall portfolio return? Show each calculation."\
+\
+NOTED: Claude performs better this way and does a better job in catching errors because it has to go step by step and won\'92t skip over smaller items.}
